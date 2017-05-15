@@ -1,0 +1,35 @@
+[package]
+build = "build.rs"
+links = "gtk_source"
+name = "gtksourceview-sys"
+version = "0.2.0"
+
+[build-dependencies]
+pkg-config = "0.3.7"
+
+[dependencies]
+atk-sys = "^0.3.4"
+bitflags = "0.8"
+cairo-sys-rs = "^0.3.4"
+gdk-pixbuf-sys = "^0.3.4"
+gdk-sys = "^0.3.4"
+gio-sys = "^0.3.4"
+glib-sys = "^0.3.4"
+gobject-sys = "^0.3.4"
+gtk-sys = "^0.3.4"
+libc = "0.2"
+pango-sys = "^0.3.4"
+
+[features]
+v3_10 = ["v3_8"]
+v3_12 = ["v3_10"]
+v3_14 = ["v3_12"]
+v3_16 = ["v3_14"]
+v3_18 = ["v3_16"]
+v3_20 = ["v3_18"]
+v3_22 = ["v3_20"]
+v3_24 = ["v3_22"]
+v3_8 = []
+
+[lib]
+name = "gtk_source_sys"
