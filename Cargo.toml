@@ -32,4 +32,4 @@ v3_24 = ["v3_22"]
 v3_8 = []
 
 [lib]
-name = "gtk_source_sys"
+name = "gtksourceview_sys"
